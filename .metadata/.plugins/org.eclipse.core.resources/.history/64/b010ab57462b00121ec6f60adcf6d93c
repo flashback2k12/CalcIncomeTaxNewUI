@@ -1,0 +1,102 @@
+package steuerklasse1;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JButton;
+
+public class AdressBildschirm extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					AdressBildschirm frame = new AdressBildschirm();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public AdressBildschirm() {
+		setBounds(100, 100, 450, 445);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblAngabenZurPerson = new JLabel("Angaben zur Person:");
+		lblAngabenZurPerson.setFont(lblAngabenZurPerson.getFont().deriveFont(lblAngabenZurPerson.getFont().getStyle() | Font.BOLD));
+		lblAngabenZurPerson.setBounds(10, 11, 179, 25);
+		contentPane.add(lblAngabenZurPerson);
+		
+		JLabel lblVorname = new JLabel("Vorname: ");
+		lblVorname.setBounds(10, 47, 101, 14);
+		contentPane.add(lblVorname);
+		
+		JLabel lblNachname = new JLabel("Nachname:");
+		lblNachname.setBounds(10, 70, 101, 14);
+		contentPane.add(lblNachname);
+		
+		JLabel lblStrae = new JLabel("Stra\u00DFe:");
+		lblStrae.setBounds(10, 95, 101, 14);
+		contentPane.add(lblStrae);
+		
+		JLabel lblPlz = new JLabel("PLZ: ");
+		lblPlz.setBounds(10, 119, 101, 14);
+		contentPane.add(lblPlz);
+		
+		JLabel lblWohnort = new JLabel("Wohnort:");
+		lblWohnort.setBounds(10, 143, 101, 14);
+		contentPane.add(lblWohnort);
+		
+		JLabel lblAngabenZumArbeitgeber = new JLabel("Angaben zum Arbeitgeber:");
+		lblAngabenZumArbeitgeber.setFont(lblAngabenZumArbeitgeber.getFont().deriveFont(lblAngabenZumArbeitgeber.getFont().getStyle() | Font.BOLD));
+		lblAngabenZumArbeitgeber.setBounds(10, 188, 179, 14);
+		contentPane.add(lblAngabenZumArbeitgeber);
+		
+		JLabel lblName = new JLabel("Name: ");
+		lblName.setBounds(10, 213, 101, 14);
+		contentPane.add(lblName);
+		
+		JLabel label = new JLabel("Stra\u00DFe:");
+		label.setBounds(10, 238, 101, 14);
+		contentPane.add(label);
+		
+		JLabel label_1 = new JLabel("PLZ: ");
+		label_1.setBounds(10, 263, 101, 14);
+		contentPane.add(label_1);
+		
+		JLabel label_2 = new JLabel("Wohnort:");
+		label_2.setBounds(10, 288, 101, 14);
+		contentPane.add(label_2);
+		
+		JButton btnWeiter = new JButton("weiter");
+		btnWeiter.setBounds(10, 352, 89, 23);
+		contentPane.add(btnWeiter);
+		
+		JButton btnZurck = new JButton("zur\u00FCck");
+		btnZurck.setBounds(335, 352, 89, 23);
+		contentPane.add(btnZurck);
+	}
+
+}

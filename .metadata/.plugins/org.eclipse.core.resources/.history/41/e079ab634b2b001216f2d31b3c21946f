@@ -1,0 +1,19 @@
+package globalVar;
+
+import steuerklasse1.*;
+
+public class GlobalVariable {
+	
+	
+	private AdressBildschirm Vorname = (AdressBildschirm)txt_Vorname.getText();
+
+	public String getVorname() {
+		return Vorname;
+	}
+
+	public void setVorname(String vorname) {
+		this.Vorname = vorname; 
+	} 
+	
+
+}

@@ -1,0 +1,20 @@
+import steuerklasse1.*;
+
+
+package globalVar;
+
+public class GlobalVariable {
+	
+	
+	private String Vorname;
+
+	public String getVorname() {
+		return Vorname;
+	}
+
+	public void setVorname(String vorname) {
+		Vorname = txt_Vorname.getText();
+	} 
+	
+
+}

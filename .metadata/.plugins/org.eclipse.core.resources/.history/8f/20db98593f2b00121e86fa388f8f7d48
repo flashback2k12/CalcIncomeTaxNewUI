@@ -1,0 +1,52 @@
+package steuerklasse1;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+public class HoleUnterlagen extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					HoleUnterlagen frame = new HoleUnterlagen();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public HoleUnterlagen() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 170);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblAufstehenUndUnterlagen = new JLabel("aufstehen und Unterlagen holen!!!!!! :-) ");
+		lblAufstehenUndUnterlagen.setHorizontalAlignment(SwingConstants.CENTER);
+		lblAufstehenUndUnterlagen.setBounds(51, 47, 304, 28);
+		contentPane.add(lblAufstehenUndUnterlagen);
+	}
+
+}

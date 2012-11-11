@@ -1,0 +1,11 @@
+package steuerklasse1;
+
+import steuerklasse1.AdressBildschirm;
+
+public class GlobaleVariablen {
+	
+	String Vorname = txt_Vorname.getText();
+	
+	
+
+}

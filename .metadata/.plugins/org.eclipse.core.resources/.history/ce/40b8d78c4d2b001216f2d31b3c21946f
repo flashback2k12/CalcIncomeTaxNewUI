@@ -1,0 +1,9 @@
+package steuerklasse1;
+
+public class GlobaleVariablen {
+	
+	String Vorname;
+	
+	
+
+}

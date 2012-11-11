@@ -1,0 +1,17 @@
+package steuerklasse1;
+
+public class GlobaleVariablen {
+	
+	private String Vorname;  //  (...)txt_Vorname.getText(); --> wie bekomme ich die Variable hier rein? 
+
+	public String getVorname() {
+		return Vorname;
+	}
+
+	public void setVorname(String vorname) {
+		Vorname = vorname;
+	}
+	
+	
+
+}
