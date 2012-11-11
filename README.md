@@ -1,5 +1,8 @@
-Readme Update + push test
+das programm ist an ledige, kinderlose gehaltsempfänger gerichtet.
 
-readme push test #2
 
-weil es so schön ist --> push test #3
+
+to-do:
+
+- austausch von werten zw. mehreren GUI's
+- etc.
