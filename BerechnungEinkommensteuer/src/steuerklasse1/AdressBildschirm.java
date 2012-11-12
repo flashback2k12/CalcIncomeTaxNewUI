@@ -12,7 +12,8 @@ import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class AdressBildschirm extends JFrame {
+public class AdressBildschirm extends JFrame //implements ActionListener {
+
 
 	/**
 	 * 
@@ -50,6 +51,8 @@ public class AdressBildschirm extends JFrame {
 	 * Create the frame.
 	 */
 	public AdressBildschirm() {
+
+//this.owner = owner;
 		setBounds(100, 100, 450, 477);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -190,7 +193,7 @@ public class AdressBildschirm extends JFrame {
 
 //Pray to GOD :-)
 
-VorsorgeTF = txt_Vorname;
+//VorsorgeTF = txt_Vorname;
 
 
 // btnWeiter.addActionListner(this);
@@ -199,10 +202,8 @@ public void actionPerformed(ActionEvent e) {
 Object source = e.getSource();
 if(source == btnWeiter)
 {
-Adressbildschirm.setGlobalData(new Global(VorsorgeTF.getText()));
+owner.setGlobalData(new GlobalData(txt_Vorname.getText()));
 }
-
-
 
 
 */
