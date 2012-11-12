@@ -103,6 +103,7 @@ public class AdressBildschirm extends JFrame {
 		contentPane.add(lblArbeitsort);
 		
 		JButton btnWeiter = new JButton("weiter");
+// btn.Weiter.addActionListner(this);
 		btnWeiter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
@@ -183,5 +184,28 @@ public class AdressBildschirm extends JFrame {
 		txt_FahrtStrecke.setColumns(10);
 		txt_FahrtStrecke.setBounds(195, 329, 145, 20);
 		contentPane.add(txt_FahrtStrecke);
+
+
+/*
+
+//Pray to GOD :-)
+
+VorsorgeTF = txt_Vorname;
+
+
+// btnWeiter.addActionListner(this);
+
+public void actionPerformed(ActionEvent e) {
+Object source = e.getSource();
+if(source == btnWeiter)
+{
+Adressbildschirm.setGlobalData(new Global(VorsorgeTF.getText()));
+}
+
+
+
+
+*/
+
 	}
 }
