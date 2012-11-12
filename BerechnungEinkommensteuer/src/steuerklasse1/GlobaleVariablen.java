@@ -13,7 +13,38 @@ public class GlobaleVariablen {
 	public void setVorname(String vorname) {
 		Vorname = vorname;
 	}
-	
-	
+
 
 }
+
+
+/*
+
+public class GlobalData {
+
+private String vorname;
+
+public GlobalData()
+{
+
+}
+
+public GlobalData(String vorname)
+{
+setVorname(vorname);
+}
+
+public void setVorname(String vorname)
+{
+this.vorname = vorname;
+}
+
+public String getVorname()
+{
+return vorname;
+}
+
+}
+
+
+*/
