@@ -1,0 +1,24 @@
+[1mdiff --cc README.md[m
+[1mindex b6fded9,ba081ad..0000000[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@@ -1,8 -1,8 +1,19 @@@[m
+[32m++<<<<<<< HEAD[m
+[32m +das programm ist an ledige, kinderlose gehaltsempf�nger gerichtet.[m
+[32m +[m
+[32m +[m
+[32m +[m
+[32m +to-do:[m
+[32m +[m
+[32m +- austausch von werten zw. mehreren GUI's[m
+[32m +- etc.[m
+[32m++=======[m
+[32m+ Das Programm ist an ledige, kinderlose Gehaltsempfänger gerichtet...[m
+[32m+ [m
+[32m+ [m
+[32m+ to-do:[m
+[32m+ [m
+[32m+ -Austausch von Werten über mehrere GUI's[m
+[32m+ -many, many more[m
+[32m+ [m
+[32m++>>>>>>> bc33e4bcc2aeb8f408ac9fe4639f66d9379b337d[m

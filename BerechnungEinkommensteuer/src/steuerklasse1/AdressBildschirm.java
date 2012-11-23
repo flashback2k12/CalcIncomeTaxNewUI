@@ -12,7 +12,8 @@ import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class AdressBildschirm extends JFrame {
+public class AdressBildschirm extends JFrame //implements ActionListener {
+
 
 	/**
 	 * 
@@ -21,11 +22,11 @@ public class AdressBildschirm extends JFrame {
 	private JPanel contentPane;
 	private JTextField txt_Vorname;
 	private JTextField txt_Nachname;
-	private JTextField txt_StraßeWO;
+	private JTextField txt_Straï¿½eWO;
 	private JTextField txt_PlzWO;
 	private JTextField txt_Wohnort;
 	private JTextField txt_NameAG;
-	private JTextField txt_StraßeAG;
+	private JTextField txt_Straï¿½eAG;
 	private JTextField txt_PlzAG;
 	private JTextField txt_Arbeitsort;
 	private JTextField txt_FahrtStrecke;
@@ -50,6 +51,8 @@ public class AdressBildschirm extends JFrame {
 	 * Create the frame.
 	 */
 	public AdressBildschirm() {
+
+//this.owner = owner;
 		setBounds(100, 100, 450, 477);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -103,23 +106,9 @@ public class AdressBildschirm extends JFrame {
 		contentPane.add(lblArbeitsort);
 		
 		JButton btnWeiter = new JButton("weiter");
+// btn.Weiter.addActionListner(this);
 		btnWeiter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
-			/*	
-				String Vorname = txt_Vorname.getText(); 
-				
-				String getVorname(){
-					return Vorname;
-				}
-				
-				void setVorname(String vorname){
-					Vorname = vorname;
-				}
-				
-				
-				*/
-				
 				
 				
 				Auswertung A = new Auswertung();
@@ -140,10 +129,10 @@ public class AdressBildschirm extends JFrame {
 		txt_Nachname.setBounds(195, 67, 145, 20);
 		contentPane.add(txt_Nachname);
 		
-		txt_StraßeWO = new JTextField();
-		txt_StraßeWO.setColumns(10);
-		txt_StraßeWO.setBounds(195, 92, 145, 20);
-		contentPane.add(txt_StraßeWO);
+		txt_Straï¿½eWO = new JTextField();
+		txt_Straï¿½eWO.setColumns(10);
+		txt_Straï¿½eWO.setBounds(195, 92, 145, 20);
+		contentPane.add(txt_Straï¿½eWO);
 		
 		txt_PlzWO = new JTextField();
 		txt_PlzWO.setColumns(10);
@@ -160,10 +149,10 @@ public class AdressBildschirm extends JFrame {
 		txt_NameAG.setBounds(195, 210, 145, 20);
 		contentPane.add(txt_NameAG);
 		
-		txt_StraßeAG = new JTextField();
-		txt_StraßeAG.setColumns(10);
-		txt_StraßeAG.setBounds(195, 235, 145, 20);
-		contentPane.add(txt_StraßeAG);
+		txt_Straï¿½eAG = new JTextField();
+		txt_Straï¿½eAG.setColumns(10);
+		txt_Straï¿½eAG.setBounds(195, 235, 145, 20);
+		contentPane.add(txt_Straï¿½eAG);
 		
 		txt_PlzAG = new JTextField();
 		txt_PlzAG.setColumns(10);
@@ -198,5 +187,26 @@ public class AdressBildschirm extends JFrame {
 		txt_FahrtStrecke.setColumns(10);
 		txt_FahrtStrecke.setBounds(195, 329, 145, 20);
 		contentPane.add(txt_FahrtStrecke);
+
+
+/*
+
+//Pray to GOD :-)
+
+//VorsorgeTF = txt_Vorname;
+
+
+// btnWeiter.addActionListner(this);
+
+public void actionPerformed(ActionEvent e) {
+Object source = e.getSource();
+if(source == btnWeiter)
+{
+owner.setGlobalData(new GlobalData(txt_Vorname.getText()));
+}
+
+
+*/
+
 	}
 }
